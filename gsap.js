@@ -23,7 +23,17 @@ tl.from(searchBox, {
 
 tl.from(videoBox, {
     opacity: 0,
-    x: -300,
-    y: -200,
+    x:200,
+    y:200,
     duration: 1,
 }, "-=3")
+
+const cursor = document.querySelector(".cursor");
+window.addEventListener("mousemove", (e)=>{
+    gsap.to(cursor, {
+        x: e.x,
+        y: e.y,
+        duration:.8,
+        ease: "back.out"
+    })
+})
