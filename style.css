@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for arrow rotation on hover */
+.rotate-arrow:hover {
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.news-image {
+    transition: opacity 0.3s ease-in-out;
+}
+.menu-box a:hover{
+    color: #E65E0B;
+}
