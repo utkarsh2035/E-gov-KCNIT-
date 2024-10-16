@@ -10,9 +10,10 @@
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
+<body class="m-0 p-0 box-border overflow-hidden relative">
+    
 <div class="bg-gray-50">
-    <nav class="flex items-center justify-between p-4 bg-white shadow-md w-full sticky top-0 z-50">
+    <nav class="flex items-center justify-between p-4 bg-white shadow-md w-full fixed top-0 z-50">
       <!-- Logo -->
       <div class="flex items-center space-x-2 logo-box">
         <a href="index.html">
@@ -32,7 +33,7 @@
   
       <!-- Search Bar -->
       <div class="hidden md:flex items-center space-x-2 search-box">
-        <input type="text" placeholder="Search" class="border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-orange-400">
+        <input type="text" placeholder="Search" class="border-2 border-gray-400 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-none">
         <button class="px-4 py-2 text-white bg-orange-400 rounded-md hover:bg-orange-600">Search</button>
       </div>
   
@@ -63,6 +64,12 @@
     </div>
   
 </div>
+    <!-- Video - Box -->
+    <!-- Background Video Section -->
+     <div class="video-box h-3/4 w-screen bg-pink-400">
+        <video src="./assets/testingVideo.mp4" autoplay muted loop class="w-full h-full object-cover overflow-hidden"></video>
+     </div>
+    <!-- News - Box -->
     <div class="bg-gray-50 flex flex-col min-h-screen">
         <!-- Header -->
             <main class="flex-grow container mx-auto p-6">
