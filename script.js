@@ -1,5 +1,4 @@
 // News Selection
-
 const newsCards = document.querySelectorAll(".news-card");
 const newsImage = document.getElementById("news-image");
 
@@ -11,7 +10,7 @@ newsCards.forEach((card) => {
       newsImage.src = imageUrl;
       newsImage.style.opacity = 1;
     }, 300);
-  });
+  });
 });
 
 // navbar-responsivness
