@@ -1,7 +1,7 @@
-let lenis = new Lenis()
+let lenis = new Lenis();
 
-raf = (time)=>{
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-}
-requestAnimationFrame(raf)
+raf = (time) => {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+};
+requestAnimationFrame(raf);
