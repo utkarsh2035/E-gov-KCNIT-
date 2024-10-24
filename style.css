@@ -30,11 +30,6 @@
 .boxHeight {
   height: 85vh;
 }
-
-/* Team-box */
-/* .team-box{
-  background: rgb(237, 166, 11);
-} */
 #categories {
   overflow: hidden;
   width: 90%;
@@ -110,8 +105,8 @@
 #categories div p {
   width: 90%;
   padding: 0 5%;
-  background-color: #008080;
-  background-color: rgba(0, 128, 128, 0.8);
+  background-color: rgba(255, 166, 0, 0.401);
+  background-color: rgba(239, 101, 8, 0.351);
   font-family: "Raleway", sans-serif;
 
   -webkit-transition: top 0.2s ease-out, bottom 0.2s ease-out,
@@ -230,3 +225,5 @@
 #fork:hover:before {
   transform: translateX(0) skewX(-45deg);
 }
+
+/* login form css */

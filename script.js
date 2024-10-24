@@ -1,4 +1,5 @@
-// News Selection
+// news-box
+
 const newsCards = document.querySelectorAll(".news-card");
 const newsImage = document.getElementById("news-image");
 
@@ -9,49 +10,41 @@ newsCards.forEach((card) => {
     setTimeout(() => {
       newsImage.src = imageUrl;
       newsImage.style.opacity = 1;
-    }, 300);
+    }, 300);
+  });
+});
+
+// Event-calender js
+document.addEventListener('DOMContentLoaded', function () {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      height: '100%', // Ensure it fills the height
+      events: [
+          {
+              title: 'Workshop',
+              start: '2024-10-20',
+              description: 'Workshop on e-Government initiatives and digital transformation in public administration.',
+          },
+          {
+              title: 'Conference',
+              start: '2024-10-25',
+              description: 'Conference on emerging technologies in e-Government.',
+          },
+          {
+              title: 'Hackathon',
+              start: '2024-11-05',
+              description: '12-hour hackathon focused on innovative public sector solutions.',
+          },
+          // Add more events here
+      ],
+      eventClick: function(info) {
+          alert(info.event.title + ': ' + info.event.extendedProps.description);
+      }
   });
-});
 
-// navbar-responsivness
+  calendar.render();
 
-const menuButton = document.getElementById("menuButton");
-const mobileMenu = document.getElementById("mobileMenu");
-
-menuButton.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
-
-const newsItems = [
-  "India Mobile Congress 2024 - Register Now",
-  "5G Technology Updates - Learn More",
-  "New Smartphone Launches in 2024",
-  "AI Innovations Shaping the Future",
-  "Tech Conferences to Watch in 2024",
-];
-
-let currentNewsIndex = 0;
-const newsTextElement = document.getElementById("newsText");
-
-// Function to update the news text
-function updateNews(index) {
-  newsTextElement.style.opacity = 0; // Fade out text
-  setTimeout(() => {
-    newsTextElement.textContent = newsItems[index]; // Change text
-    newsTextElement.style.opacity = 1; // Fade in text
-  }, 300);
-}
-
-// Previous button functionality
-document.getElementById("prevBtn").addEventListener("click", () => {
-  currentNewsIndex =
-    currentNewsIndex === 0 ? newsItems.length - 1 : currentNewsIndex - 1;
-  updateNews(currentNewsIndex);
-});
-
-// Next button functionality
-document.getElementById("nextBtn").addEventListener("click", () => {
-  currentNewsIndex =
-    currentNewsIndex === newsItems.length - 1 ? 0 : currentNewsIndex + 1;
-  updateNews(currentNewsIndex);
+  
 });
