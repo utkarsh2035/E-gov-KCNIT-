@@ -124,6 +124,16 @@ session_start();
                     </div>
                 </div>
 
+                <!-- Project 7 -->
+                <div class="bg-orange-300 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
+                    <img src="./assets/p7.png" alt="Project 1" class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3">Portfolio- Utkarsh Rawat</h3>
+                        <p class="text-gray-700 mb-4">Welcome to my personal portfolio project! This is a fully responsive website showcasing my skills, education, and projects, designed to highlight my web development capabilities. Built with a modern UI and a focus on accessibility, the portfolio is an example of my expertise in front-end development and UI/UX design.</p>
+                        <a href="https://github.com/utkarsh2035/portfolio.git" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
+                    </div>
+                </div>
+
                 <!-- Project 2 -->
                 <div class="bg-orange-300 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
                     <img src="./assets/p2.jpg" alt="Project 2" class="w-full h-58 object-cover">
