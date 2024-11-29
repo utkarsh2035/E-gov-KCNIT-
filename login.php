@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>E-Gov|KCNIT</title>
+    <title>E-Gov | KCNIT</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,7 +35,7 @@
                 exit();
             } else {
                 $errMssg =  '<div class="alert alert-danger alert-dismissible fade show mt-0 items-center" role="alert">
-                    <strong>Oops!</strong> You should check in on some of those fields below.
+                    <strong>Oops!</strong> You should check in some of those fields below.
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>

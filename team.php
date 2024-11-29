@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Gov|KCNIT</title>
+    <title>E-Gov | KCNIT</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -117,7 +117,7 @@ session_start();
                         <p class="font-medium text-lg">Dr. Faculty Name</p>
                     </div>
                     <div class="w-48">
-                        <img src="faculty.jpg" alt="Faculty Image" class="rounded-lg shadow-lg mb-4">
+                        <img src="./assets/vivek.jpg" alt="Faculty Image" class="rounded-lg shadow-lg mb-4">
                         <p class="font-medium text-lg">Mr. Vivek Tripathi</p>
                     </div>
                 </div>
@@ -170,11 +170,11 @@ session_start();
                         <p class="font-medium text-lg"><b><i>Sudeep Kumar</i></b></p>
                     </div>
                     <div class="w-48 mx-auto">
-                        <img src="volunteer3.jpg" alt="Volunteer 3" class="rounded-lg shadow-lg mb-4">
+                        <img src="./assets/sukarn.jpg" alt="Volunteer 3" class="rounded-lg shadow-lg mb-4">
                         <p class="font-medium text-lg"><b><i>Sukarn Maurya</i></b></p>
                     </div>
                     <div class="w-48 mx-auto">
-                        <img src="volunteer4.jpg" alt="Volunteer 4" class="rounded-lg shadow-lg mb-4">
+                        <img src="./assets/omisha.jpg" alt="Volunteer 4" class="rounded-lg shadow-lg mb-4">
                         <p class="font-medium text-lg"><b><i>Omisha</i></b></p>
                     </div>
                 </div>
@@ -182,6 +182,7 @@ session_start();
 
         </div>
     </div>
+    
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 p-6">

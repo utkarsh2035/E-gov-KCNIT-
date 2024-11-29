@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Gov|KCNIT</title>
+    <title>E-Gov | KCNIT</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -106,6 +106,7 @@ session_start();
                 $branch = $_POST['branch'];
                 $linkedln = $_POST['linkedln'];
                 $github = $_POST['github'];
+                $userImage = $_FILES['userImage'];
 
                 $sql = "SELECT * FROM `userregistration` WHERE email = '$email' OR password = '$password' OR linkedln = '$linkedln' OR github = '$github'";
 
@@ -115,7 +116,7 @@ session_start();
                     if ($num > 0) {
                         $user = 1;
                     } else {
-                        $sql = "insert into `userregistration`(name, email, password, course, branch, linkedln, github) values('$name', '$email', '$password', '$course', '$branch', '$linkedln', '$github')";
+                        $sql = "insert into `userregistration`(name, email, password, course, branch, linkedln, github, userImage) values('$name', '$email', '$password', '$course', '$branch', '$linkedln', '$github', '$userImage')";
                         $result = mysqli_query($con, $sql);
                         if ($result) {
                             $success = 1;
@@ -129,21 +130,21 @@ session_start();
             <?php
             if ($user) {
                 echo '<div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-600 dark:bg-gray-900 dark:text-red-400" role="alert">
-                    <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+                    <span class="font-medium">Oops!</span> You should check in some of those fields below.
                     </div>';
             }
             if ($success) {
                 echo '<div class="p-4 mb-4 mt- 28 text-sm text-green-800 rounded-lg bg-green-600 dark:bg-gray-900 dark:text-green-400" role="alert">
-                <span class="font-medium">Success alert!</span> Change a few things up and try submitting again.
+                <span class="font-medium">Congratulations!</span> You have successfully registered for E-Gov club. You can contact to Mr. Abhishek Tiwari to join the club.
                 </div>';
             }
 
             ?>
-            <form action="register.php" method="post" class="bg-white shadow-lg rounded px-10 pt-8 pb-8 mb-4 transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-700">
+            <form action="register.php" method="post" class="bg-white shadow-lg rounded px-10 pt-8 pb-8 mb-4 transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-700" enctype="multipart/form-data">
                 <div class="relative mb-6">
                     <input
                         class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="name" type="text" placeholder=" " name="name" />
+                        id="name" type="text" placeholder=" " name="name" required/>
                     <label
                         class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
                         Name
@@ -152,7 +153,7 @@ session_start();
                 <div class="relative mb-6">
                     <input
                         class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="email" type="email" placeholder=" " name="email" />
+                        id="email" type="email" placeholder=" " name="email" required/>
                     <label
                         class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
                         Email
@@ -161,7 +162,7 @@ session_start();
                 <div class="relative mb-6">
                     <input
                         class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="password" type="password" placeholder=" " name="password" />
+                        id="password" type="password" placeholder=" " name="password" required/>
                     <label
                         class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
                         Password
@@ -170,7 +171,7 @@ session_start();
                 <div class="relative mb-6">
                     <input
                         class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="email" type="text" placeholder=" " name="course" />
+                        id="email" type="text" placeholder=" " name="course" required/>
                     <label
                         class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
                         Course
@@ -179,7 +180,7 @@ session_start();
                 <div class="relative mb-6">
                     <input
                         class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="email" type="text" placeholder=" " name="branch" />
+                        id="email" type="text" placeholder=" " name="branch" required/>
                     <label
                         class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
                         Branch
@@ -188,7 +189,7 @@ session_start();
                 <div class="relative mb-6">
                     <input
                         class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="email" type="text" placeholder=" " name="linkedln" />
+                        id="email" type="text" placeholder=" " name="linkedln" required/>
                     <label
                         class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
                         Linkedin URL
@@ -197,12 +198,22 @@ session_start();
                 <div class="relative mb-6">
                     <input
                         class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="email" type="text" placeholder=" " name="github" />
+                        id="email" type="text" placeholder=" " name="github" required/>
                     <label
                         class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
                         Github URL
                     </label>
                 </div>
+                <div class="relative mb-6">
+                    <input
+                        class="peer shadow appearance-none border border-orange-400 bg-white rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="userImage" type="file" name="userImage"
+                        accept=".jpg, .jpeg, .png" required />
+                    <label
+                        class="absolute text-orange-600 duration-300 transform -translate-y-1/2 scale-75 top-1 z-10 origin-[0] left-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1/2 peer-focus:scale-75 peer-focus:-translate-y-2">
+                        Upload Your Image
+                    </label>
+                </div>                
                 <div class="flex items-center justify-between mb-6">
                     <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 w-full rounded focus:outline-none focus:shadow-outline" type="submit">
                         Sign Up

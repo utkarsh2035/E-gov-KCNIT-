@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Gov|KCNIT</title>
+    <title>E-Gov | KCNIT</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -178,6 +178,28 @@ session_start();
                         <h3 class="text-2xl font-semibold mb-3">Netflix-Clone UI</h3>
                         <p class="text-gray-700 mb-4">This project is a multi-page front-end clone of the popular video-streaming platform, Netflix. It replicates the core features of Netflix’s Home, Login and dashboard interface, including video browsing and a responsive layout.</p>
                         <a href="https://github.com/Rehan0013/Netflix-Clone" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bg-orange-300 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
+                    <img src="./assets/rehan-portfolio.jpg" alt="Project 3" class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3">Portfolio - Rehan Ali</h3>
+                        <p class="text-gray-700 mb-4">The website is a 3D portfolio built using ReactJS and Three.js, designed to offer a unique and interactive way to showcase your skills and projects. Through a visually immersive interface, visitors can explore your work in a 3D environment, experiencing smooth animations and creative designs that highlight your expertise in web development and graphics.</p>
+                        <a href="https://github.com/Rehan0013/portfolio" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bg-orange-300 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
+                    <img src="./assets/attendence.jpg" alt="Project 3" class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3">Smart Attendence System</h3>
+                        <p class="text-gray-700 mb-4">Developed a Smart Attendance System using Python,
+                        which utilizes facial recognition to automate
+                        attendance. The system captures real-time video,
+                        recognizes faces, and records attendance
+                         automatically.</p>
+                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
                     </div>
                 </div>
 

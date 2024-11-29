@@ -8,7 +8,7 @@ session_start();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Gov|KCNIT</title>
+  <title>E-Gov | KCNIT</title>
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -40,6 +40,7 @@ session_start();
         <a href="projects.php" class="hover:text-gray-900 transition-colors duration-200">Projects</a>
         <a href="about.php" class="hover:text-gray-900 transition-colors duration-200">About</a>
         <a href="contact.php" class="hover:text-gray-900 transition-colors duration-200">Contact</a>
+        <a href="dashboard.php" class="hover:text-gray-900 transition-colors duration-200">Dashboard</a>
       </div>
 
       <!-- Login Section for Desktop -->
@@ -286,6 +287,73 @@ session_start();
 
           </div>
         </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto py-12 px-6 lg:px-8">
+      
+      <!-- Heading Section -->
+      <div class="text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Skills We Teach</h2>
+        <p class="text-lg text-gray-600">Empower yourself with our range of skill-enhancing courses</p>
+      </div>
+  
+      <!-- Skills Section -->
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Skill Card 1 -->
+        <div class="bg-orange-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:bg-orange-300">
+          <div class="flex items-center justify-center">
+            <img src="https://freepngimg.com/thumb/web_development/6-2-web-development-download-png-thumb.png" alt="Coding Icon" class="h-20 w-20">
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">Web Development</h3>
+          <p class="mt-2 text-gray-600 text-center">Master HTML, CSS, JavaScript, and frameworks like React and Tailwind.</p>
+        </div>
+  
+        <!-- Skill Card 2 -->
+        <div class="bg-orange-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:bg-orange-300">
+          <div class="flex items-center justify-center">
+            <img src="https://www.vlrtraining.in/wp-content/uploads/2020/10/logo-data-structure.png" alt="Design Icon" class="h-20 w-20">
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">Data Structure & Algorithm</h3>
+          <p class="mt-2 text-gray-600 text-center">Understanding the concept of DSA with C++ and Python.</p>
+        </div>
+  
+        <!-- Skill Card 3 -->
+        <div class="bg-orange-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:bg-orange-300">
+          <div class="flex items-center justify-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/3090/3090011.png" alt="Marketing Icon" class="h-20 w-20">
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">Data Analytics</h3>
+          <p class="mt-2 text-gray-600 text-center">Explore data analytics techniques with tools like Python, SQL, and Excel.</p>
+        </div>
+  
+        <!-- Skill Card 4 -->
+        <div class="bg-orange-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:bg-orange-300">
+          <div class="flex items-center justify-center">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/036/105/045/small_2x/artificial-intelligence-ai-processor-chip-icon-symbol-for-graphic-design-logo-web-site-social-media-png.png" alt="Photography Icon" class="h-20 w-20">
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">How to Use AI</h3>
+          <p class="mt-2 text-gray-600 text-center">Dive into AI technologies and learn how to apply machine learning in real-world projects.</p>
+        </div>
+  
+        <!-- Skill Card 5 -->
+        <div class="bg-orange-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:bg-orange-300">
+          <div class="flex items-center justify-center">
+            <img src="https://appzcreative.com/wp-content/uploads/2018/06/Android-App-Development-400x400.png" alt="AI Icon" class="h-20 w-20">
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">Android Development</h3>
+          <p class="mt-2 text-gray-600 text-center">Build Android apps using Kotlin or Java with Android Studio.</p>
+        </div>
+  
+        <!-- Skill Card 6 -->
+        <div class="bg-orange-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:bg-orange-300">
+          <div class="flex items-center justify-center">
+            <img src="https://i0.wp.com/ahex.co/wp-content/uploads/2022/06/iphone-application-development.webp?fit=409%2C400&ssl=1" alt="Languages Icon" class="h-20 w-20">
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-800 text-center">iOS Development</h3>
+          <p class="mt-2 text-gray-600 text-center">Create iOS applications using Swift, objective-C and Xcode.</p>
+        </div>
+  
       </div>
     </div>
 
