@@ -42,25 +42,6 @@ session_start();
                 <a href="contact.php" class="hover:text-gray-900 transition-colors duration-200">Contact</a>
             </div>
 
-            <!-- Login Section for Desktop -->
-            <div class="hidden md:flex items-center space-x-2 login-box text-gray-700">
-                <img src="./assets/login.png" alt="login" class="h-8">
-                <?php
-                if (isset($_SESSION['name'])) {
-                    echo '<p class="text-gray-700 text-lg hover:text-orange-600 transition-colors duration-200">Welcome, ' . htmlspecialchars($_SESSION['name']) . '</p>';
-                } else {
-                    echo '<a href="./login.php" class="text-gray-700 text-lg hover:text-orange-600 transition-colors duration-200">Login</a>';
-                }
-                ?>
-            </div>
-
-            <!-- Logout for Desktop (Hidden on smaller screens) -->
-            <?php
-            if (isset($_SESSION['name'])) {
-                echo '<a href="./logout.php" class="hidden md:block text-gray-700 text-lg hover:text-orange-600 transition-colors duration-200 mr-8">Logout</a>';
-            }
-            ?>
-
             <!-- Mobile Menu Button -->
             <div class="md:hidden flex items-center">
                 <button id="menuButton" class="focus:outline-none text-gray-700">
@@ -81,15 +62,6 @@ session_start();
             <a href="about.php" class="block text-gray-700 hover:text-orange-600 mb-2">About</a>
             <a href="contact.php" class="block text-gray-700 hover:text-orange-600">Contact</a>
 
-            <!-- Login and Logout for Mobile -->
-            <?php
-            if (isset($_SESSION['name'])) {
-                echo '<p class="block text-gray-700 text-lg hover:text-orange-600 mb-2 mt-2">Welcome, ' . htmlspecialchars($_SESSION['name']) . '</p>';
-                echo '<a href="./logout.php" class="block text-gray-700 hover:text-orange-600 mb-2">Logout</a>';
-            } else {
-                echo '<a href="./login.php" class="block text-gray-700 hover:text-orange-600">Login</a>';
-            }
-            ?>
         </div>
     </div>
 
@@ -140,7 +112,7 @@ session_start();
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-3">Spotify Clone</h3>
                         <p class="text-gray-700 mb-4">Spotify is a digital music service that offers millions of songs and millions of artists.</p>
-                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
+                        <a href="https://github.com/Sudeep916/spotify-complete.git" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
                     </div>
                 </div>
 
@@ -200,6 +172,14 @@ session_start();
                         recognizes faces, and records attendance
                          automatically.</p>
                         <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
+                    </div>
+                </div>
+                <div class="bg-orange-300 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
+                    <img src="./assets/p8.jpg" alt="Project 3" class="w-full h-58 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3">Amazon Clone</h3>
+                        <p class="text-gray-700 mb-4">The Amazon Clone is a responsive front-end e-commerce website designed using HTML, CSS, and JavaScript. It replicates the core layout and features of Amazon, showcasing product listings, a modern user interface, and a seamless design.</p>
+                        <a href="https://github.com/dm-mishra1578/amazon-clone.git" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">View Project</a>
                     </div>
                 </div>
 

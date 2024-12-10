@@ -41,25 +41,6 @@ session_start();
         <a href="contact.php" class="hover:text-gray-900 transition-colors duration-200">Contact</a>
       </div>
 
-      <!-- Login Section for Desktop -->
-      <div class="hidden md:flex items-center space-x-2 login-box text-gray-700">
-        <img src="./assets/login.png" alt="login" class="h-8">
-        <?php
-        if (isset($_SESSION['name'])) {
-          echo '<p class="text-gray-700 text-lg hover:text-orange-600 transition-colors duration-200">Welcome, ' . htmlspecialchars($_SESSION['name']) . '</p>';
-        } else {
-          echo '<a href="./login.php" class="text-gray-700 text-lg hover:text-orange-600 transition-colors duration-200">Login</a>';
-        }
-        ?>
-      </div>
-
-      <!-- Logout for Desktop (Hidden on smaller screens) -->
-      <?php
-      if (isset($_SESSION['name'])) {
-        echo '<a href="./logout.php" class="hidden md:block text-gray-700 text-lg hover:text-orange-600 transition-colors duration-200 mr-8">Logout</a>';
-      }
-      ?>
-
       <!-- Mobile Menu Button -->
       <div class="md:hidden flex items-center">
         <button id="menuButton" class="focus:outline-none text-gray-700">
@@ -80,15 +61,6 @@ session_start();
       <a href="about.php" class="block text-gray-700 hover:text-orange-600 mb-2">About</a>
       <a href="contact.php" class="block text-gray-700 hover:text-orange-600">Contact</a>
 
-      <!-- Login and Logout for Mobile -->
-      <?php
-      if (isset($_SESSION['name'])) {
-        echo '<p class="block text-gray-700 text-lg hover:text-orange-600 mb-2 mt-2">Welcome, ' . htmlspecialchars($_SESSION['name']) . '</p>';
-        echo '<a href="./logout.php" class="block text-gray-700 hover:text-orange-600 mb-2">Logout</a>';
-      } else {
-        echo '<a href="./login.php" class="block text-gray-700 hover:text-orange-600">Login</a>';
-      }
-      ?>
     </div>
   </div>
   <div
